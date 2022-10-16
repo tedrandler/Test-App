@@ -1,0 +1,670 @@
+<html lang="en" >
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" type="text/css" href="Leidos_app/leidos_app_css/leidos_app.css"/>
+    <title>Ted Randler's Demo App for Leidos</title>
+    <meta name="description" content="Leidos Demo App by Ted Randler" />
+    <meta name="keywords" content=" " />
+
+    <link href="https://fonts.googleapis.com/css2?family=Sansita&amp;display=swap" rel="stylesheet"/>
+    <link href="https://use.fontawesome.com/ce192bab10.css" media="all" rel="stylesheet" />
+  </head>
+
+  <body>
+
+ <!--NAV-->   
+    <nav class="navbar navbar-expand-lg navbar-light ted-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand ted-brand" href="#">Test App Version 2</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Link One</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Link Two</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Link Three</a>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown ted-drop">
+          <a href="#" class="dropdown-toggle ted-toggle-drop-link" data-bs-toggle="dropdown">Versions</a>
+          <div class="dropdown-menu ted-drop-menu">
+              <a href="index.html" class="dropdown-item">Version 1</a>
+              <a href="version2.html" class="dropdown-item">Version 2</a>
+          </div>
+      </div>  
+      </div>
+    </nav>
+
+  <!--APP BODY-->  
+    <div class="container fluid">
+      <div class="card-deck row">
+        <div class="row ">
+        <div class="ted-admn-bar d-flex justify-content-between">
+          <h4 class="">Showing <span id="rad-btn"  data-num="10"></span> Records</h4>
+          <div class="ted-admin-button-frame">
+            <button id="ted-edit-users-close" type="button">Close Edit Users</button>
+          <button id="ted-edit-users" type="button">Edit Users</button>
+          <button id="ted-launch-Add" type="button">Add User</button>
+        </div>
+        </div>
+        </div>
+        <div id="myData" class="card-deck row">
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="card" id="1">
+              <img class="thumbnail " src="Leidos_app/leidos_app_images/1.png" alt="Leanne Graham">
+              <h5 class="card-title">Leanne Graham</h5> 
+              <button type="button" class="ted-adm-btn ted-edit-launch">Edit</button>
+              <button type="button" class="ted-adm-btn ted-save" >Save</button>
+              <div class="address-frame">
+                <ul class="ted-list">
+                  <li>Kulas Light</li>
+                  <li>Apt. 556</li>
+                  <li>Gwenborough</li>
+                  <li>92998-3874</li>
+                  <li>
+                    <a href="mailto:Sincere@april.biz" class="ted-email"></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="address-form">
+                <ul class="ted-list">
+                  <li><h6>Name</h6></li>
+                  <li><input type="text" value="Leanne"></li>
+                  <li><input type="text" value="" placeholder="Middle Name"></li>
+                  <li><input type="text" value="Grahm"></li>
+                  <li><h6>Address</h6></li>
+                  <li><input type="text" value="Kulas Light"></li>
+                  <li><input type="text" value="Apt. 556"></li>
+                  <li><input type="text" value="Gwenborough"></li>
+                  <li><input type="text" value="92998-3874"></li>
+                  <li><h6>Email</h6></li>
+                  <li><input type="text" value="Sincere@april.biz"></li>
+                  <li><h6>Profile Picture</h6></li>
+                  <li><input type="file" class="form-control" id="customFile" /></li>
+                </ul>
+              </div>
+              <button type="button" class="btn-delete" id="trash">
+                <span class="btn-label ted-delete">Delete</span>
+              </button>
+              <div class="delete-controls-frame">
+                <h6 class="delete-ask">Are you sure you want delete this record?</h6>
+                <button type="button" class="delete-controls delete-no" >
+                  <span class=" ">No</span>
+                </button>
+                <button type="button" class="delete-controls delete-yes" >
+                  <span class=" ">Yes</span>
+                </button>
+              </div>  
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="card" id="2">
+              <img class="thumbnail " src="Leidos_app/leidos_app_images/2.png" alt="Ervin Howell">
+              <h5 class="card-title">Ervin Howell</h5>
+              <button type="button" class="ted-adm-btn ted-edit-launch">Edit</button>
+              <button type="button" class="ted-adm-btn ted-save" >Save</button>
+              <div class="address-frame">
+                <ul class="ted-list">
+                  <li>Victor Plains</li>
+                  <li>Suite 879</li>
+                  <li>Wisokyburgh</li>
+                  <li>90566-7771</li>
+                  <li>
+                    <a href="mailto:Shanna@melissa.tv" class="ted-email"></a>
+                  </li>
+                </ul>
+              </div>   
+              <div class="address-form">
+                <ul class="ted-list">
+                  <li><h6>Name</h6></li>
+                  <li><input type="text" value="Ervin"></li>
+                  <li><input type="text" value="" placeholder="Middle Name"></li>
+                  <li><input type="text" value="Howell"></li>
+                  <li><h6>Address</h6></li>
+                  <li><input type="text" value="Victor Plains"></li>
+                  <li><input type="text" value="Suite 879"></li>
+                  <li><input type="text" value="Wisokyburgh"></li>
+                  <li><input type="text" value="90566-7771"></li>
+                  <li><h6>Email</h6></li>
+                  <li><input type="text" value="Shanna@melissa.tv"></li>
+                  <li><h6>Profile Picture</h6></li>
+                  <li><input type="file" class="form-control" id="customFile" /></li>
+                </ul>
+              </div>
+              <button type="button" class="btn-delete" id="trash">
+                <span class="btn-label ted-delete">Delete</span>
+              </button>
+              <div class="delete-controls-frame">
+                <h6 class="delete-ask">Are you sure you want delete this record?</h6>
+                <button type="button" class="delete-controls delete-no" >
+                  <span class=" ">No</span>
+                </button>
+                <button type="button" class="delete-controls delete-yes" >
+                  <span class=" ">Yes</span>
+                </button>
+              </div>  
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="card" id="3">
+              <img class="thumbnail " src="Leidos_app/leidos_app_images/3.png" alt="Clementine Bauch"> 
+              <h5 class="card-title">Clementine Bauch</h5>
+              <button type="button" class="ted-adm-btn ted-edit-launch">Edit</button>
+              <button type="button" class="ted-adm-btn ted-save" >Save</button>
+              <div class="address-frame">
+                <ul class="ted-list">
+                  <li>Douglas Extension</li>
+                  <li>Suite 847</li>
+                  <li>McKenziehaven</li>
+                  <li>59590-4157</li>
+                  <li>
+                    <a href="mailto:Nathan@yesenia.net" class="ted-email"></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="address-form">
+                <ul class="ted-list">
+                  <li><h6>Name</h6></li>
+                  <li><input type="text" value="Clementine Bauch"></li>
+                  <li><input type="text" value="" placeholder="Middle Name"></li>
+                  <li><input type="text" value="Bauch"></li>
+                  <li><h6>Address</h6></li>
+                  <li><input type="text" value="Douglas Extension"></li>
+                  <li><input type="text" value="Suite 847"></li>
+                  <li><input type="text" value="McKenziehaven"></li>
+                  <li><input type="text" value="59590-4157"></li>
+                  <li><h6>Email</h6></li>
+                  <li><input type="text" value="Nathan@yesenia.net"></li>
+                  <li><h6>Profile Picture</h6></li>
+                  <li><input type="file" class="form-control" id="customFile" /></li>
+                </ul>
+              </div> 
+              <button type="button" class="btn-delete" id="trash">
+                <span class="btn-label ted-delete">Delete</span>
+              </button>
+              <div class="delete-controls-frame">
+                <h6 class="delete-ask">Are you sure you want delete this record?</h6>
+                <button type="button" class="delete-controls delete-no" >
+                  <span class=" ">No</span>
+                </button>
+                <button type="button" class="delete-controls delete-yes" >
+                  <span class=" ">Yes</span>
+                </button>
+              </div>  
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="card" id="4">
+              <img class="thumbnail " src="Leidos_app/leidos_app_images/4.png" alt="Patricia Lebsack">
+              <h5 class="card-title">Patricia Lebsack</h5>
+              <button type="button" class="ted-adm-btn ted-edit-launch">Edit</button>
+              <button type="button" class="ted-adm-btn ted-save" >Save</button>
+              <div class="address-frame">
+                <ul class="ted-list">
+                  <li>Hoeger Mall</li>
+                  <li>Apt. 692</li>
+                  <li>South Elvis</li>
+                  <li>53919-4257</li>
+                  <li>
+                    <a
+                      href="mailto:Julianne.OConner@kory.org"
+                      class="ted-email"
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="address-form">
+                <ul class="ted-list">
+                  <li><h6>Name</h6></li>
+                  <li><input type="text" value="Patricia"></li>
+                  <li><input type="text" value="" placeholder="Middle Name"></li>
+                  <li><input type="text" value="Lebsack"></li>
+                  <li><h6>Address</h6></li>
+                  <li><input type="text" value="Hoeger Mall"></li>
+                  <li><input type="text" value="Apt. 692"></li>
+                  <li><input type="text" value="South Elvis"></li>
+                  <li><input type="text" value="53919-4257"></li>
+                  <li><h6>Email</h6></li>
+                  <li><input type="text" value="Julianne.OConner@kory.org"></li>
+                  <li><h6>Profile Picture</h6></li>
+                  <li><input type="file" class="form-control" id="customFile" /></li>
+                </ul>
+              </div> 
+              <button type="button" class="btn-delete" id="trash">
+                <span class="btn-label ted-delete">Delete</span>
+              </button>
+              <div class="delete-controls-frame">
+                <h6 class="delete-ask">Are you sure you want delete this record?</h6>
+                <button type="button" class="delete-controls delete-no" >
+                  <span class=" ">No</span>
+                </button>
+                <button type="button" class="delete-controls delete-yes" >
+                  <span class=" ">Yes</span>
+                </button>
+              </div>  
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="card" id="5">
+              <img class="thumbnail " src="Leidos_app/leidos_app_images/5.png" alt="Chelsey Dietrich">
+              <h5 class="card-title">Chelsey Dietrich</h5>
+              <button type="button" class="ted-adm-btn ted-edit-launch">Edit</button>
+              <button type="button" class="ted-adm-btn ted-save" >Save</button>
+              <div class="address-frame">
+                <ul class="ted-list">
+                  <li>Skiles Walks</li>
+                  <li>Suite 351</li>
+                  <li>Roscoeview</li>
+                  <li>33263</li>
+                  <li>
+                    <a
+                      href="mailto:Lucio_Hettinger@annie.ca"
+                      class="ted-email"
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="address-form">
+                <ul class="ted-list">
+                  <li><h6>Name</h6></li>
+                  <li><input type="text" value="Chelsey"></li>
+                  <li><input type="text" value="" placeholder="Middle Name"></li>
+                  <li><input type="text" value="Dietrich"></li>
+                  <li><h6>Address</h6></li>
+                  <li><input type="text" value="Skiles Walks"></li>
+                  <li><input type="text" value="Suite 351"></li>
+                  <li><input type="text" value="Roscoeview"></li>
+                  <li><input type="text" value="33263"></li>
+                  <li><h6>Email</h6></li>
+                  <li><input type="text" value="Lucio_Hettinger@annie.ca"></li>
+                  <li><h6>Profile Picture</h6></li>
+                  <li><input type="file" class="form-control" id="customFile" /></li>
+                </ul>
+              </div> 
+              <button type="button" class="btn-delete" id="trash">
+                <span class="btn-label ted-delete">Delete</span>
+              </button>
+              <div class="delete-controls-frame">
+                <h6 class="delete-ask">Are you sure you want delete this record?</h6>
+                <button type="button" class="delete-controls delete-no" >
+                  <span class=" ">No</span>
+                </button>
+                <button type="button" class="delete-controls delete-yes" >
+                  <span class=" ">Yes</span>
+                </button>
+              </div>  
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="card" id="6">
+              <img class="thumbnail " src="Leidos_app/leidos_app_images/6.png" alt="Mrs. Dennis Schulist">
+              <h5 class="card-title">Mrs. Dennis Schulist</h5>
+              <button type="button" class="ted-adm-btn ted-edit-launch">Edit</button>
+              <button type="button" class="ted-adm-btn ted-save" >Save</button>
+              <div class="address-frame">
+                <ul class="ted-list">
+                  <li>Norberto Crossing</li>
+                  <li>Apt. 950</li>
+                  <li>South Christy</li>
+                  <li>23505-1337</li>
+                  <li>
+                    <a href="mailto:Karley_Dach@jasper.info"class="ted-email"></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="address-form">
+                <ul class="ted-list">
+                  <li><h6>Name</h6></li>
+                  <li><input type="text" value="Dennis"></li>
+                  <li><input type="text" value="" placeholder="Middle Name"></li>
+                  <li><input type="text" value="Schulist"></li>
+                  <li><h6>Address</h6></li>
+                  <li><input type="text" value="Norberto Crossing"></li>
+                  <li><input type="text" value="Apt. 950"></li>
+                  <li><input type="text" value="South Christy"></li>
+                  <li><input type="text" value="23505-1337"></li>
+                  <li><h6>Email</h6></li>
+                  <li><input type="text" value="Karley_Dach@jasper.info"></li>
+                  <li><h6>Profile Picture</h6></li>
+                  <li><input type="file" class="form-control" id="customFile" /></li>
+                </ul>
+              </div>
+              <button type="button" class="btn-delete" id="trash">
+                <span class="btn-label ted-delete">Delete</span>
+              </button>
+              <div class="delete-controls-frame">
+                <h6 class="delete-ask">Are you sure you want delete this record?</h6>
+                <button type="button" class="delete-controls delete-no" >
+                  <span class=" ">No</span>
+                </button>
+                <button type="button" class="delete-controls delete-yes" >
+                  <span class=" ">Yes</span>
+                </button>
+              </div>  
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="card" id="7">
+              <img class="thumbnail " src="Leidos_app/leidos_app_images/7.png" alt="Kurtis Weissnat">
+              <h5 class="card-title">Kurtis Weissnat</h5>
+              <button type="button" class="ted-adm-btn ted-edit-launch">Edit</button>
+              <button type="button" class="ted-adm-btn ted-save" >Save</button>
+              <div class="address-frame">
+                <ul class="ted-list">
+                  <li>Rex Trail</li>
+                  <li>Suite 280</li>
+                  <li>Howemouth</li>
+                  <li>58804-1099</li>
+                  <li>
+                    <a href="mailto:Telly.Hoeger@billy.biz" class="ted-email"></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="address-form">
+                <ul class="ted-list">
+                  <li><h6>Name</h6></li>
+                  <li><input type="text" value="Kurtis"></li>
+                  <li><input type="text" value="" placeholder="Middle Name"></li>
+                  <li><input type="text" value=" Weissnat"></li>
+                  <li><h6>Address</h6></li>
+                  <li><input type="text" value="Rex Trail"></li>
+                  <li><input type="text" value="Suite 280"></li>
+                  <li><input type="text" value="Howemouth"></li>
+                  <li><input type="text" value="58804-1099"></li>
+                  <li><h6>Email</h6></li>
+                  <li><input type="text" value="Telly.Hoeger@billy.biz"></li>
+                  <li><h6>Profile Picture</h6></li>
+                  <li><input type="file" class="form-control" id="customFile" /></li>
+                </ul>
+              </div>
+              <button type="button" class="btn-delete" id="trash">
+                <span class="btn-label ted-delete">Delete</span>
+              </button>
+              <div class="delete-controls-frame">
+                <h6 class="delete-ask">Are you sure you want delete this record?</h6>
+                <button type="button" class="delete-controls delete-no" >
+                  <span class=" ">No</span>
+                </button>
+                <button type="button" class="delete-controls delete-yes" >
+                  <span class=" ">Yes</span>
+                </button>
+              </div>  
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="card" id="8">
+              <img class="thumbnail " src="Leidos_app/leidos_app_images/8.png" alt="Nicholas Runolfsdottir V">
+              <h5 class="card-title">Nicholas Runolfsdottir V</h5>
+              <button type="button" class="ted-adm-btn ted-edit-launch">Edit</button>
+              <button type="button" class="ted-adm-btn ted-save" >Save</button>
+              <div class="address-frame">
+                <ul class="ted-list">
+                  <li>Ellsworth Summit</li>
+                  <li>Suite 729</li>
+                  <li>Aliyaview</li>
+                  <li>45169</li>
+                  <li>
+                    <a href="mailto:Sherwood@rosamond.me" class="ted-email"></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="address-form">
+                <ul class="ted-list">
+                  <li><h6>Name</h6></li>
+                  <li><input type="text" value="Nicholas"></li>
+                  <li><input type="text" value="" placeholder="Middle Name" ></li>
+                  <li><input type="text" value=" Runolfsdottir V"></li>
+                  <li><h6>Address</h6></li>
+                  <li><input type="text" value="Ellsworth Summit"></li>
+                  <li><input type="text" value="Suite 729"></li>
+                  <li><input type="text" value="Aliyaview"></li>
+                  <li><input type="text" value="45169"></li>
+                  <li><h6>Email</h6></li>
+                  <li><input type="text" value="Sherwood@rosamond.me"></li>
+                  <li><h6>Profile Picture</h6></li>
+                  <li><input type="file" class="form-control" id="customFile" /></li>
+                </ul>
+              </div>
+              <button type="button" class="btn-delete" id="trash">
+                <span class="btn-label ted-delete">Delete</span>
+              </button>
+              <div class="delete-controls-frame">
+                <h6 class="delete-ask">Are you sure you want delete this record?</h6>
+                <button type="button" class="delete-controls delete-no" >
+                  <span class=" ">No</span>
+                </button>
+                <button type="button" class="delete-controls delete-yes" >
+                  <span class=" ">Yes</span>
+                </button>
+              </div>  
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="card" id="9">
+              <img class="thumbnail " src="Leidos_app/leidos_app_images/9.png" alt="Glenna Reichert">
+              <h5 class="card-title">Glenna Reichert</h5>
+              <button type="button" class="ted-adm-btn ted-edit-launch">Edit</button>
+              <button type="button" class="ted-adm-btn ted-save" >Save</button>
+              <div class="address-frame">
+                <ul class="ted-list">
+                  <li>Dayna Park</li>
+                  <li>Suite 449</li>
+                  <li>Bartholomebury</li>
+                  <li>76495-3109</li>
+                  <li>
+                    <a
+                      href="mailto:Chaim_McDermott@dana.io"
+                      class="ted-email"
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="address-form">
+                <ul class="ted-list">
+                  <li><h6>Name</h6></li>
+                  <li><input type="text" value="Glenna"></li>
+                  <li><input type="text" value="" placeholder="Middle Name" ></li>
+                  <li><input type="text" value=" Reichert"></li>
+                  <li><h6>Address</h6></li>
+                  <li><input type="text" value="Dayna Park"></li>
+                  <li><input type="text" value="Suite 449"></li>
+                  <li><input type="text" value="Bartholomebury"></li>
+                  <li><input type="text" value="76495-3109"></li>
+                  <li><h6>Email</h6></li>
+                  <li><input type="text" value="Sherwood@rosamond.me"></li>
+                  <li><h6>Profile Picture</h6></li>
+                  <li><input type="file" class="form-control" id="customFile" /></li>
+                </ul>
+              </div>
+              <button type="button" class="btn-delete" id="trash">
+                <span class="btn-label ted-delete">Delete</span>
+              </button>
+              <div class="delete-controls-frame">
+                <h6 class="delete-ask">Are you sure you want delete this record?</h6>
+                <button type="button" class="delete-controls delete-no" >
+                  <span class=" ">No</span>
+                </button>
+                <button type="button" class="delete-controls delete-yes" >
+                  <span class=" ">Yes</span>
+                </button>
+              </div>  
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="card" id="10">
+              <img class="thumbnail " src="Leidos_app/leidos_app_images/10.png" alt="Clementina DuBuque">
+              <h5 class="card-title">Clementina DuBuque</h5>
+              <button type="button" class="ted-adm-btn ted-edit-launch">Edit</button>
+              <button type="button" class="ted-adm-btn ted-save" >Save</button>
+              <div class="address-frame">
+                <ul class="ted-list">
+                  <li>Kattie Turnpike</li>
+                  <li>Suite 198</li>
+                  <li>Lebsackbury</li>
+                  <li>31428-2261</li>
+                  <li>
+                    <a href="mailto:Rey.Padberg@karina.biz" class="ted-email"></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="address-form">
+                <ul class="ted-list">
+                  <li><h6>Name</h6></li>
+                  <li><input type="text" value="Clementina"></li>
+                  <li><input type="text" value="" placeholder="Middle Name" ></li>
+                  <li><input type="text" value="DuBuque"></li>
+                  <li><h6>Address</h6></li>
+                  <li><input type="text" value="Kattie Turnpike"></li>
+                  <li><input type="text" value="Suite 198"></li>
+                  <li><input type="text" value="Lebsackbury"></li>
+                  <li><input type="text" value="31428-2261"></li>
+                  <li><h6>Email</h6></li>
+                  <li><input type="text" value="Rey.Padberg@karina.biz"></li>
+                  <li><h6>Profile Picture</h6></li>
+                  <li><input type="file" class="form-control" id="customFile" /></li>
+                </ul>
+              </div>
+              <button type="button" class="btn-delete" id="trash">
+                <span class="btn-label ted-delete">Delete</span>
+              </button>
+              <div class="delete-controls-frame">
+                <h6 class="delete-ask">Are you sure you want delete this record?</h6>
+                <button type="button" class="delete-controls delete-no" >
+                  <span class=" ">No</span>
+                </button>
+                <button type="button" class="delete-controls delete-yes" >
+                  <span class=" ">Yes</span>
+                </button>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--MODAL-->
+
+    <div id="tedModal" class="modalFrame ">
+      <div  class="ted-modal-dimensions">
+        <div class="tedmodalbox">
+        <div class="tedcloseFrame">
+          <button id="closeModal" class="btn btn-secondary btn-sm">Close</button>
+        </div>
+        <div id="details" class="container w-100   float-left tedTextBox">
+          <form class="ted-form">
+            <div class="d-flex justify-content-between">
+            <h3>Add User</h3>
+            <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputFirstName">First Name</label>
+              <input type="text" class="form-control" id="inputFirstName" >
+              <label for="inputMiddleName">Middle Name </label>
+              <input type="text" class="form-control" id="inputMiddleName" >
+              <label for="inputLastName">Last Name</label>
+              <input type="text" class="form-control" id="inputLastName" >
+              <label for="customFile">Upload Photo</label>
+              <input type="file" class="form-control" id="customFile" />
+              <label for="inputEmail">Email</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+          <div class="form-group">
+            <label for="inputAddress2">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">State</label>
+              <select id="inputState" class="form-control">
+                <option selected>Choose...</option>
+                <option value="AK">AK</option>
+                <option value="AL">AL</option>
+                <option value="AR">AR</option>
+                <option value="AZ">AZ</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DC">DC</option>
+                <option value="DE">DE</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="IA">IA</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="MA">MA</option>
+                <option value="MD">MD</option>
+                <option value="ME">ME</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MO">MO</option>
+                <option value="MS">MS</option>
+                <option value="MT">MT</option>
+                <option value="NC">NC</option>
+                <option value="ND">ND</option>
+                <option value="NE">NE</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NV">NV</option>
+                <option value="NY">NY</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PA</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VA">VA</option>
+                <option value="VT">VT</option>
+                <option value="WA">WA</option>
+                <option value="WI">WI</option>
+                <option value="WV">WV</option>
+                <option value="WY">WY</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+          </div>
+        </form></div>
+        </div>
+      </div> 
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/ce192bab10.js"></script>
+    <script type="text/javascript" charset="utf-8" src="Leidos_app/leidos_app_js/leidos_app_version2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,492 @@
+body{
+    background: repeating-linear-gradient(
+        to right,
+        #dfb6f394,
+        #c8b1cb 10px,
+        #ddb9ebe0 10px,
+        #ecd0f1 20px
+      );
+     
+}
+
+
+
+.ted-navbar{
+    background-color: rgb(237, 229, 241);
+}
+
+.ted-brand{
+    background-color: rgb(86, 66, 104);
+    color: #fff;
+    padding: 8px 12px 8px 12px;
+    border-radius: 50%;
+    border: 2px solid rgb(200, 136, 205);
+    font-family: 'Sansita', sans-serif;
+}
+
+.ted-brand:hover{
+    color: #fff;
+}
+
+.ted-drop{
+    float: right;
+    margin-right: 150px;
+    
+}
+
+.ted-drop-menu{
+    max-width: 59px;
+   border-radius: 0px  0px 4px 4px;
+}
+
+.ted-toggle-drop-link{
+text-decoration: none;
+ text-align: center;
+ background-color: rgb(86, 66, 104);
+ color: #fff;
+ padding: 8px 10px;
+ border-radius: 4px;
+}
+
+.ted-toggle-drop-link:hover{
+    color: #fff;
+}
+
+.ted-admn-bar{
+    display: block;
+    width: 100%;
+    background-color: rgb(182, 163, 199);
+    margin-top: 8px;
+    padding: 8px;
+    color: #fff;
+    box-shadow: inset 4px 4px 7px rgb(86, 66, 104);
+    border-radius: 6px;
+}
+
+.ted-admin-button-frame{
+   
+    padding-top: 4px;;
+}
+
+
+
+#ted-launch-Add, #ted-edit-users, #ted-edit-users-close{
+    background-color: rgb(86, 66, 104);
+    color: #fff;
+    border:none;
+    border-radius: 6px;
+}
+
+#ted-edit-users-close{
+    display: none;
+}
+
+
+.card{
+    margin: 5% 5%;
+    background: linear-gradient(90deg,  rgb(125, 104, 144) 30%, #f1e8f0 30%);
+    box-shadow:rgb(86, 66, 104) 2px 2px 6px;
+}
+
+#xx1{
+   border: 1px red dashed; 
+}
+
+
+.ted-list{
+    list-style-type: none;
+    padding-left: 75px;
+}
+
+ul.ted-list li:nth-child(even) {
+    background:#ccb8cf;
+    }
+
+.address-frame{
+    float: left;
+}
+
+.thumbnail{
+    border: solid 3px  rgb(125, 104, 144);
+   border-radius: 50%;
+   margin: auto;
+   position: absolute;
+   width: 22%;
+   top: 22%;
+   left: -10px;
+  z-index: 999;
+
+}
+.btn-delete{ 
+    background-color: rgb(217, 208, 225);
+    width: 120px;
+    text-align:center;
+  position: relative;
+    display: block;
+    border:none;
+    border-radius: 25px 0px 4px 25px;
+    margin: 0px auto 4px auto;
+    z-index: 800;
+}
+
+.delete-controls-frame{
+    display: none;
+    float: left;
+    width: 100%;
+}
+
+.delete-ask{
+   
+   background-color: #c8b1cb; 
+   text-align: center;
+   padding: 4px;
+   
+}
+
+.delete-controls{
+    border: 2px solid  #c8b1cb;
+    border-radius: 4px;
+    margin: auto;
+    display: block;
+    width: 80%;
+    padding:10px;
+}
+
+
+.delete-yes{
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.delete-no{
+
+}
+
+
+.btn-label{
+    width: 100px;
+    display: block; 
+    margin-top: 3px;
+}
+
+.ted-delete::before{
+    font-family: "FontAwesome"; 
+    font-weight: 400; 
+    content: "\f014 ";
+    display: block;
+    background-color: rgb(86, 66, 104);
+    float: left;
+    padding: 4px 8px 4px 8px;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 8px;
+    margin-top: -2px;
+    margin-left: -5px;
+    width: 35px;
+}
+
+.card-title{
+    background-color: rgb(86, 66, 104);
+    color: #fff;
+    padding: 4px;
+    position:relative;
+    z-index: 900;
+}
+
+.ted-email{
+    
+    position: absolute;
+    top: 31px;
+    left: 0px;
+   border: none;
+    width: 63px; 
+
+}
+
+.ted-email::before{
+    font-family: "FontAwesome";   
+    content: "\f003";
+    display: block;
+    font-size: 32px;
+    float: left;
+    padding: 4px 8px 4px 8px;
+    color:  rgb(214, 211, 218);
+    border-radius: 4px;
+   width: 100%;
+   text-align: center;
+   margin-top: 150%;
+ 
+}
+
+
+#rad-btn::before {
+    content: attr(data-num);
+  }
+
+ .ted-modal-dimensions{ 
+    margin:auto; 
+   width: 60%; 
+    
+}
+
+  .modalFrame{
+    padding: 10px; 
+    position: absolute; 
+    width: 100%; 
+    z-index: 1000; 
+    height: 100%; 
+    display: none;  
+    top: 0px; 
+    box-shadow: inset 0px 0px 160px  rgb(61, 26, 72); 
+}
+  .tedmodalbox{
+    float: left;  
+    width: 100%; 
+    margin-top: 16px; 
+    background-color: #fff; 
+    min-height: 500px; 
+    opacity: 100%; 
+    z-index: 1000; 
+    box-shadow:  4px 4px 330px rgb(61, 26, 72); 
+    border-radius: 6px;
+    
+    
+}
+  .tedcloseFrame{
+    float: left; 
+    width: 100%; 
+    padding: 4px;
+    background-color: rgb(86, 66, 104);
+}
+    #closeModal{
+       float: right; 
+    }
+  .tedTextBox{
+    overflow-y: scroll; 
+    max-height: 600px;
+}
+
+
+.address-form{
+    display:none;
+}
+
+
+
+
+.ted-form{
+    width: 80%;
+    margin: 20px auto 20px auto;
+   
+}
+
+.ted-list input{
+margin-top: 4px;
+margin-bottom: 4px;
+margin-left:2px;
+border-radius: 4px;
+border:none;
+width: 90%;
+}
+
+
+.ted-adm-btn{
+    border:none;
+    border-radius: 25px;
+   margin:auto;
+    width: 30%;
+    font-weight: 600;
+}
+.ted-edit-launch{
+background-color: #721a7ed5;
+color:#f1e8f0;
+display:none;
+}
+
+.ted-save{
+    background-color: #5e5cdc;
+color:#f1e8f0;
+display:none;
+}
+
+@media only screen and (max-width: 576px),  only screen and (max-device-width : 576px)  {
+            
+    .ted-drop{
+        float: left;
+        margin: auto;
+      
+    }
+
+ 
+
+}
+
+@media only screen and (min-width: 200px){
+    .thumbnail{
+width: 20%;
+top: 22%;
+left: -8px;
+    }       
+    .card{
+        background: linear-gradient(90deg,  rgb(125, 104, 144) 15%, #f1e8f0 15%);
+    }
+
+    .ted-admn-bar{
+        margin-left: 15px;
+    }
+    .ted-modal-dimensions{ 
+       width: 90%; 
+        
+    }
+    .ted-form{
+        width: 100%;
+        margin: 10px auto 20px auto;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 414px){
+    .thumbnail{
+width: 24%;
+top: 22%;
+left: -8px;
+    }       
+    .ted-form{
+        width: 100%;
+        margin: 10px auto 20px auto;
+    }
+    .ted-modal-dimensions{ 
+        width: 60%; 
+         
+     }
+   
+
+}
+
+
+@media only screen and (min-width: 540px) and (max-width: 575px){
+    .thumbnail{
+width: 17%;
+top: 22%;
+left: -8px;
+    }       
+    .ted-form{
+        width: 100%;
+        margin: 10px auto 20px auto;
+    }
+    .ted-modal-dimensions{ 
+        width: 60%; 
+         
+     }
+
+}
+
+
+@media only screen and (min-width: 576px) and (max-width: 760px){
+            
+    .thumbnail{
+        width: 35%;
+        top: 22%;
+        left: -10px;
+    }       
+    .btn-delete{ 
+       margin-left: 39%;
+        float: right;
+    }
+    .card{
+        background: linear-gradient(90deg,  rgb(125, 104, 144) 28%, #f1e8f0 28%);
+    }
+    .ted-form{
+        width: 100%;
+        margin: 10px auto 20px auto;
+    }
+    .ted-modal-dimensions{ 
+        width: 60%; 
+         
+     }
+
+}
+
+@media only screen and (min-width: 768px){
+            
+    .thumbnail{
+        width: 40%;
+        top: 22%;
+        left: -10px;
+    }       
+    .btn-delete{ 
+       margin-left: 35%;
+        float: right;
+    }
+
+    .card{
+        background: linear-gradient(90deg,  rgb(125, 104, 144) 30%, #f1e8f0 30%);
+    }
+    .ted-form{
+        width: 100%;
+        margin: 10px auto 20px auto;
+    }
+    .ted-modal-dimensions{ 
+        width: 60%; 
+         
+     }
+
+}
+
+
+@media only screen and (min-width: 992px) {
+            
+    .thumbnail{
+        width: 30%;
+        top: 22%;
+        left: -10px;
+    }       
+    .card{
+        background: linear-gradient(90deg,  rgb(125, 104, 144) 24%, #f1e8f0 24%);
+    }
+    .ted-form{
+        width: 100%;
+        margin: 10px auto 20px auto;
+    }
+    .ted-modal-dimensions{ 
+        width: 60%; 
+         
+     }
+}
+
+
+@media only screen and (min-width: 1200px){
+            
+    .thumbnail{
+        width: 23%;
+        top: 22%;
+        left: -7px;
+    }       
+    .card{
+        background: linear-gradient(90deg,  rgb(125, 104, 144) 20%, #f1e8f0 20%);
+    }
+    .ted-form{
+        width: 100%;
+        margin: 10px auto 20px auto;
+    }
+    .ted-modal-dimensions{ 
+        width: 50%; 
+         
+     }
+}
+
+@media only screen and (min-width: 1440px){
+            
+    .thumbnail{
+        width: 21%;
+        top: 22%;
+        left: -7px;
+    }       
+    .card{
+        background: linear-gradient(90deg,  rgb(125, 104, 144) 18%, #f1e8f0 18%);
+    }
+    .ted-modal-dimensions{ 
+        max-width: 45%; 
+         
+     }
+
+}
